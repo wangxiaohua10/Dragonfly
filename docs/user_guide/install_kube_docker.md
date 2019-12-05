@@ -138,7 +138,7 @@ spec:
       - name: df-daemon
         image: dragonflyoss/dfclient:1.0.0
         command: ["/opt/dragonfly/df-client/dfdaemon"]
-        args: ["--registry", "https://thub.autohome.com.cn","--node","10.27.12.100,10.27.12.101,10.27.12.102","--ratelimit","3000M"]
+        args: ["--registry", "https://自己的镜像仓库","--node","supernode所在节点的IP,多个IP用逗号分隔","--ratelimit","3000M"]
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 65001
